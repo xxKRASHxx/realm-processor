@@ -1,0 +1,29 @@
+{
+  "name": "processor",
+  "version": "1.0.0",
+  "description": "video processing server",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rm -rf dist; ./node_modules/.bin/tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "author": "Daniel Lisovoy",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.147.0",
+    "redis": "^2.8.0",
+    "typescript": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.5",
+    "@types/node": "^8.0.50",
+    "@types/p-queue": "^1.1.0",
+    "@types/redis": "^2.8.1",
+    "@types/stream-buffers": "^3.0.2",
+    "@types/tmp": "0.0.33",
+    "aws-sdk-typescript": "0.0.3",
+    "fluent-ffmpeg": "^2.1.2",
+    "p-queue": "^2.2.0",
+    "tmp": "0.0.33"
+  }
+}
